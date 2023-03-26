@@ -1,21 +1,21 @@
 ---
 version: "3"
-services: null
-movie:
-  image: seshank3/phonepaymovies:v1
-  ports:
-    - 8000:80
-  deploy:
-    replicas: 4
-train:
-  image: seshank3/phonepaytrain:v1
-  ports:
-    - 8001:80
-  deploy:
-    replicas: 4
-recharge:
-  image: seshank3/phonepayrecharge:v1
-  ports:
-    - 8002:80
-  deploy:
-    replicas: 4
+services:
+  movie:
+    image: seshank3/phonepaymovies:v1
+    ports:
+      - 8000:80
+    deploy:
+      replicas: 4
+  train:
+    image: seshank3/phonepaytrain:v1
+    ports:
+      - 8001:80
+    deploy:
+      replicas: 4
+  recharge:
+    image: seshank3/phonepayrecharge:v1
+    ports:
+      - 8002:80
+    deploy:
+      replicas: 4
