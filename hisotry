@@ -1,0 +1,80 @@
+1  sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    2  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    3  amazon-linux-extras install java-openjdk11 -y
+    4  yum install git maven jenkins -y
+    5  systemctl start jenkins.service
+    6  systemctl status jenkins.service
+    7  yum install docker -y
+    8  systemctl start docker
+    9  systemctl status docker
+   10  hostname -i
+   11  docker swarm init --advertise-addr 172.31.5.240
+   12  docker node ls
+   13  vim Dockerfile
+   14  vim index.html
+   15  docker build -t phonepaymovies:v1 .
+   16  docker image
+   17  docker images
+   18  vim index.html
+   19  docker build -t phonepaytrain:v1 .
+   20  docker images
+   21  vim index.html
+   22  docker build -t phonepayrecharge:v1 .
+   23  docker images
+   24  docker tag phonepaymovies:v1 seshank3/phonepaymovies:v1
+   25  docker tag phonepaytrain:v1 seshank3/phonepaymovies:v1
+   26  docker tag phonepaytrain:v1 seshank3/phonepaytrain:v1
+   27  docker tag phonepayrecharge:v1 seshank3/phonepayrecharge:v1
+   28  docker login
+   29  docker loing
+   30  docker login
+   31  docker images
+   32  docker push seshank3/phonepayrecharge:v1
+   33  docker push seshank3/phonepaymovies
+   34  docker push seshank3/phonepaymovies:v1
+   35  docker push seshank3/phonepaytrain:v1
+   36  vim docker-compose.yml
+   37  git init
+   38  git add .
+   39  git commit -m "docker commits" *
+   40  git remote add origin https://github.com/seshank27/dokcer-com-swarm-project.git
+   41  git push orgin master
+   42  git push -u origin main
+   43  git push origin master
+   44  cat -n docker-compose.yml
+   45  cat docker-compose.yml
+   46  chmod 777 /var/run/docker.sock
+   47  systemctl daemon-reload
+   48  systemctl resatrt docker
+   49  systemctl restart docker
+   50  systemctl status docker
+   51  vim /lib/systemd/system/docker.service
+   52  systemctl daemon-reload
+   53  systemctl restart docker
+   54  systemctl status docker
+   55  systemctl start jenkins
+   56  systemctl status jenkins
+   57  systemctl restart docker
+   58  systemctl status docker
+   59  stack ls
+   60  cat docker-compose.yml
+   61  chmod 777 /var/run/docker.sock
+   62  systemctl daemon-reload
+   63  systemctl restart docker
+   64  systemctl status docker
+   65  docker stack ls
+  
+   70  docker node ls
+   71  systemctl daemon-reload
+   72  systemctl resatrt docker
+   73  systemctl start docker
+   74  systemctl status docker
+   75  vim /lib/systemd/system/docker.service
+   76  systemctl daemon-reload
+   
+   78  systemctl daemon-reload
+   79  systemctl start docker
+   80  systemctl status docker
+   81  vim /lib/systemd/system/docker.service
+   82  systemctl daemon-reload
+   83  history
